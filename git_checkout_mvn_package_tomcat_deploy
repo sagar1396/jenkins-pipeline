@@ -10,13 +10,4 @@ node{
     def mvn = "${mvnHome}/bin/mvn"
     sh "${mvn} clean package"
   }
-  stage('Deploy-to-Dev'){
-  
-  bat(RENAME target/myweb*.war target/myweb.war')
-  
-  
-  
-    
-    
-  }
 }
