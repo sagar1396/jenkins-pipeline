@@ -11,6 +11,6 @@ node{
     bat "${mvn} clean package"
   }
   stage('Deploy-to-Dev'){
-    bat(RENAME target/myweb-0.0.5.war.war target/myweb.war')
+    bat(RENAME target/myweb-0.0.5.war.war target/myweb.war)
   }
 }
